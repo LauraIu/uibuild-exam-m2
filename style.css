@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: inherit;
+    background: transparent;
+  }
+
+body, input, textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-size:16px;
+    font-weight: medium;
+}
+
+body {
+    background-color: #F7E4D4;
+    color:#467745;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+}
+
+#form { 
+    width:100%;
+    max-width: 520px;
+
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 48px;
+    text-align:center;
+
+    padding-bottom: 0.5em; 
+    margin: 0 20px;  
+}
+
+@media(max-width:520px) {
+    h1 {
+        font-size: 36px;
+        text-align: left;
+    }
+}
+
+input[type="text"] {
+    display:block;
+    width:480px;
+    height:64px;
+
+    padding-left:20px;
+    margin: 0px auto 1.5em auto;
+
+    color: #467745;
+    background-color: #fff;
+}
+
+@media(max-width:520px) {
+    input[type="text"] {
+        width: calc(100% - 40px);
+        margin: 0px auto 1.5em auto;
+    }
+}
+
+textarea {
+    display:flex;
+    justify-self: center;
+    /* display:block; */
+    /* max-width: 100%; */
+    width:480px;
+    height:120px;
+
+    padding:20px;
+    margin: 0px auto 1.5em auto;
+    
+    color: #467745;
+    background-color: #fff;
+}
+
+@media(max-width:520px) {
+    textarea {
+        width: calc(100% - 40px);
+        margin: 0px auto 1.5em auto;
+    }
+}
+
+::placeholder {
+    color: #467745;
+    opacity: 0.6;
+}
+
+.checkbox-container {
+    display:flex;
+    align-items:center;
+    width:480px;
+
+    margin: 0px auto 2em auto;
+}
+
+@media(max-width:520px) {
+    .checkbox-container {
+        width: calc(100% - 40px);
+        margin: 0px auto 2em auto;
+    }
+}
+
+input[type="checkbox"] {
+    width:20px;
+    height:20px;
+    appearance: none;
+    
+    margin-right: 15px;
+    border:1px solid white;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.checkbox-container a {
+    text-decoration: underline;
+    color: #467745;
+}
+
+.checkbox-container a:hover {
+    text-decoration: none;
+}
+
+.checkbox-container a:visited {
+    text-decoration: underline;
+    color: #7aaa78;
+}
+
+button {
+    display:block;
+    font-family: 'EB Garamond', serif;
+    font-size: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;   
+    width:280px;
+    height:80px;
+    
+    margin:0 auto;
+    border-radius: 50px;
+    color:#F7E4D4;
+    background-color:#467745;
+
+    cursor: pointer;
+}
+
+@media(max-width:280px) {
+    button {
+        width: calc(100% - 80px);
+        
+    }
+}
