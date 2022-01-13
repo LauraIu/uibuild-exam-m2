@@ -74,8 +74,6 @@ input[type="text"] {
 textarea {
     display:flex;
     justify-self: center;
-    /* display:block; */
-    /* max-width: 100%; */
     width:480px;
     height:120px;
     resize:none;
@@ -176,4 +174,4 @@ button {
 
 /* //TODO: shrink / grow / basis --> checkbox 
 a h1-re kellene tenni egy font-weight 400-at
-a textarea-ra pedig egy resize: none-t, hogy ne jelenjen meg a jobb alsó sarkában az az újraméretezés 3szög */
+a textarea-ra pedig egy resize: none-t, hogy ne jelenjen meg a jobb alsó sarkában az újraméretezés 3szög */
